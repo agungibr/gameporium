@@ -49,8 +49,8 @@ class _GameState extends State<Game> {
                 onPressed: () {
                   Helper.showHelpDialog(
                     context,
-                    'How to top up?',
-                    '1. Input your ID.\n2. Select the amount you want to top up.\n3. Select the payment method.\n4. Click the "Top Up" button.',
+                    'Cara Melakukan Top Up',
+                    '1. Masukan ID Game.\n2. Pilih jumlah yang diinginkan.\n3. Pilih metode pembayaran.\n4. Jika sudah, klik tombol top up.',
                     'OK',
                   );
                 },
@@ -216,7 +216,7 @@ class _GameState extends State<Game> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             image: DecorationImage(
-                                              image: NetworkImage(
+                                              image: AssetImage(
                                                   _ewalletList[index][1]),
                                               fit: BoxFit.contain,
                                             ),

@@ -1,46 +1,22 @@
-// ignore: file_names
-
 class DataList {
   static List games = [
-    ['Mobile Legends', 'http://assets.lapakgaming.com/images/mobleg-logo.jpg'],
-    [
-      'Free Fire',
-      'http://assets.lapakgaming.com/images/tr:n-icon_category/free-fire-new-logo.png'
-    ],
-    ['PUBG Mobile', 'http://assets.lapakgaming.com/images/pubgm-logo.jpg'],
-    [
-      'Call of Duty Mobile',
-      'http://assets.lapakgaming.com/images/codmobile_tile.jpg'
-    ],
-    ['Valorant', 'http://assets.lapakgaming.com/images/valorant-logo.jpg'],
-    ['Genshin Impact', 'http://assets.lapakgaming.com/images/genshin-logo.png'],
-    ['Arena of Valor', 'http://assets.lapakgaming.com/images/aov_tile.jpg'],
-    [
-      'Apex Legends',
-      'http://assets.lapakgaming.com/images/tr:n-icon_category/higgs_domino_tile.jpeg'
-    ]
+    ['Mobile Legends', 'assets/images/ml.png']
+  ];
+
+  static List game = [
+    ['Free Fire', 'assets/images/ff.png']
   ];
 
   static List vouchers = [
-    [
-      'Google Play',
-      'http://assets.lapakgaming.com/images/tr:n-icon_category/GooglePlay.jpg'
-    ],
-    [
-      'Steam Wallet',
-      'http://assets.lapakgaming.com/images/tr:n-icon_category/voucher-steam-wallet-indonesia.jpg'
-    ],
-    [
-      'Xbox',
-      'http://assets.lapakgaming.com/images/tr:n-icon_category/169a7ffe-c2c7-463a-a77c-21239c9ac388.jpeg'
-    ]
+    ['Steam Wallet','assets/images/sw.png']
+  ];
+
+  static List voucher = [
+    ['Steam Wallet','assets/images/sw.png']
   ];
 
   static List entertainments = [
-    [
-      'Vidio',
-      'http://assets.lapakgaming.com/images/tr:n-icon_category/vidio.jpg'
-    ],
+    ['Vidio', 'assets/images/vidio.png'],
   ];
 
   static List mlDiamondsList = [
@@ -55,11 +31,54 @@ class DataList {
     ['257 Diamonds', 63000],
   ];
 
+  static List ffDiamondsList = [
+    ['5 Diamonds', 1200],
+    ['14 Diamonds', 3500],
+    ['28 Diamonds', 7000],
+    ['42 Diamonds', 10000],
+    ['70 Diamonds', 17500],
+    ['86 Diamonds', 20000],
+    ['140 Diamonds', 35500],
+    ['172 Diamonds', 40000],
+    ['257 Diamonds', 60000],
+  ];
+
+  static List gplayList = [
+    ['5.000 IDR', 5000],
+    ['10.000 IDR', 10000],
+    ['20.000 IDR', 20000],
+    ['50.000 IDR', 50000],
+    ['100.000 IDR', 100000],
+    ['150.000 IDR', 150000],
+    ['300.000 IDR', 300000],
+    ['500.000 IDR', 500000],
+  ];
+
+  static List swList = [
+    ['12.000 Wallet Code', 12500],
+    ['45.000 Wallet Code', 45500],
+    ['60.000 Wallet Code', 60500],
+    ['90.000 Wallet Code', 90500],
+    ['120.000 Wallet Code', 120500],
+    ['250.000 Wallet Code', 250500],
+    ['400.000 Wallet Code', 400500],
+    ['600.000 Wallet Code', 600500],
+  ];
+
+  static List vidioList = [
+    ['30 Days Diamond Mobile', 65000],
+    ['30 Days Diamond All Screen', 87000],
+    ['12 Month Diamond Mobile', 475000],
+    ['12 Month Diamond All Screen', 600000],
+    ['30 Days Platinum', 43000],
+    ['12 Month Platinum', 298000],
+  ];
+
   static List ewalletList = [
-    ['Gopay', 'http://assets.lapakgaming.com/images/logo-gopay.png'],
-    ['OVO', 'http://assets.lapakgaming.com/images/logo-ovo.png'],
-    ['Dana', 'http://assets.lapakgaming.com/images/logo-dana.png'],
-    ['LinkAja', 'http://assets.lapakgaming.com/images/logo-linkaja.png'],
-    ['ShopeePay', 'http://assets.lapakgaming.com/images/logo-shopeepay.png'],
+    ['Gopay', 'assets/images/gopay.png'],
+    ['OVO', 'assets/images/ovo.png'],
+    ['Dana', 'assets/images/dana.png'],
+    ['LinkAja', 'assets/images/la.webp'],
+    ['ShopeePay', 'assets/images/sp.png'],
   ];
 }

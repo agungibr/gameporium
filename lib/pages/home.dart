@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:gameporium/pages/categories/entertainment.dart';
 import 'package:gameporium/pages/categories/games.dart';
 import 'package:gameporium/pages/categories/vouchers.dart';
+import 'package:gameporium/pages/categories/entertainment.dart';
 import 'package:gameporium/pages/search.dart';
 import 'package:gameporium/services/darkThemeProvider.dart';
 import 'package:gameporium/services/dataList.dart';
@@ -25,13 +26,6 @@ class _HomeState extends State<Home> {
 
   final List<String> _games = <String>[
     'Mobile Legends',
-    'Free Fire',
-    'PUBG Mobile',
-    'Call of Duty Mobile',
-    'Valorant',
-    'Genshin Impact',
-    'Arena of Valor',
-    'Apex Legends',
   ];
 
   int? _selectedIndex;
@@ -110,7 +104,7 @@ class _HomeState extends State<Home> {
                           if (_selectedIndex == 0) {
                             _selectedCategory = [Games()];
                           } else if (_selectedIndex == 1) {
-                            _selectedCategory = [Vouchers()];
+                            _selectedCategory = [Steamwallet()];
                           } else if (_selectedIndex == 2) {
                             _selectedCategory = [Entertainment()];
                           } else {
@@ -130,7 +124,7 @@ class _HomeState extends State<Home> {
                   children: _selectedCategory ??
                       [
                         Games(),
-                        Vouchers(),
+                        Steamwallet(),
                         Entertainment(),
                       ],
                 ),

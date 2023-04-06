@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:gameporium/pages/orders/game.dart';
+import 'package:gameporium/pages/orders/sw.dart';
+import 'package:gameporium/pages/orders/vidio.dart';
 
 class Search extends StatelessWidget {
   List<String> itemList;

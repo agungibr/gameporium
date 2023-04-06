@@ -70,7 +70,7 @@ class Games extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
-                            image: NetworkImage(DataList.games[index][1]),
+                            image: AssetImage(DataList.games[index][1]),
                             fit: BoxFit.cover,
                           ),
                           // color: Theme.of(context).colorScheme.secondary,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gameporium/pages/orders/vidio.dart';
 import 'package:gameporium/services/dataList.dart';
 import 'package:gameporium/services/textStyle.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Entertainment extends StatelessWidget {
   @override
@@ -44,7 +46,18 @@ class Entertainment extends StatelessWidget {
             return Card(
               child: InkWell(
                 borderRadius: BorderRadius.circular(8),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    PageTransition(
+                      child: Vidio(
+                        name: DataList.entertainments[index][0],
+                        image: DataList.entertainments[index][1],
+                      ),
+                      type: PageTransitionType.bottomToTop,
+                    ),
+                  );
+                },
                 child: Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -58,7 +71,7 @@ class Entertainment extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
                             image:
-                                NetworkImage(DataList.entertainments[index][1]),
+                                AssetImage(DataList.entertainments[index][1]),
                             fit: BoxFit.cover,
                           ),
                         ),

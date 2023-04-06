@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:gameporium/pages/orders/sw.dart';
 import 'package:gameporium/services/dataList.dart';
 import 'package:gameporium/services/textStyle.dart';
+import 'package:page_transition/page_transition.dart';
 
-class Vouchers extends StatelessWidget {
+class Steamwallet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -44,22 +46,34 @@ class Vouchers extends StatelessWidget {
             return Card(
               child: InkWell(
                 borderRadius: BorderRadius.circular(8),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    PageTransition(
+                      child: Sw(
+                        names: DataList.vouchers[index][0],
+                        images: DataList.vouchers[index][1],
+                      ),
+                      type: PageTransitionType.bottomToTop,
+                    ),
+                  );
+                },
                 child: Padding(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-                        height: MediaQuery.of(context).size.width * 0.3,
                         width: MediaQuery.of(context).size.width * 0.3,
+                        height: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
-                            image: NetworkImage(DataList.vouchers[index][1]),
+                            image: AssetImage(DataList.vouchers[index][1]),
                             fit: BoxFit.cover,
                           ),
+                          // color: Theme.of(context).colorScheme.secondary,
                         ),
                       ),
                       const SizedBox(height: 10),
